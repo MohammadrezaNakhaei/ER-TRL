@@ -1,0 +1,21 @@
+# @package _global_
+defaults:
+  - common
+  - _self_
+
+env_name: 'walker-friction'
+latent_size: 40
+algo_params:
+  alpha_init: 50.0
+  alpha_max: 10000
+  use_next_obs_in_context: true
+  meta_batch_size: 16
+  num_steps_per_eval: 600
+  embedding_batch_size: 256
+  embedding_mini_batch_size: 256
+  data_dir: './offline_dataset/walker-friction'
+  club_model_loss_weight: 10.0
+  club_loss_weight: 25.0
+  prediction_loss_weight: 7.0
+  mir_loss_weight: 5.0
+  use_club_sa: true

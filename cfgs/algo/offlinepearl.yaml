@@ -1,0 +1,11 @@
+# @package _global_
+algo_params:
+  allow_backward_z: true
+  use_FOCAL_cl: false 
+  use_club: false
+  use_prediction: false
+
+util_params:
+  exp_name: 'OfflinePearl'
+
+algo_type: "CSROPrediction"

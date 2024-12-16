@@ -1,0 +1,36 @@
+name: omrl
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+  - anaconda
+  - menpo
+dependencies:
+  - cython=0.29.37
+  - jupyter
+  - pytorch 
+  - torchvision
+  - wandb
+  - hydra-core
+  - imageio  # For VideoRecorder in utils/video.py
+  - imageio-ffmpeg # needed for rendering
+  - ffmpeg # needed for rendering
+  - moviepy  # For VideoRecorder in utils/video.py
+  # For mujoco
+  - glew
+  - mesalib
+  - mesa-libgl-cos6-x86_64
+  - glfw3
+  - seaborn
+  - matplotlib
+  - numpy=1.26
+  - pip
+  - pip:
+    - gin_config==0.5.0
+    - gtimer==1.0.0b5
+    - gym==0.23.1
+    - mujoco_py==2.1.2.14
+    - pandas
+    - termcolor==2.4.0
+    - tabulate
+    - scikit-learn

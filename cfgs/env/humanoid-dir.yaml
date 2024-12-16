@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+  - common
+  - _self_
+
+env_name: 'humanoid-dir-custom'
+algo_params:
+  meta_batch_size: 16
+  num_steps_per_eval: 600
+  embedding_batch_size: 256
+  embedding_mini_batch_size: 256
+  data_dir: './offline_dataset/humanoid-dir-custom'
+  club_model_loss_weight: 10.0
+  club_loss_weight: 50.0
+  prediction_loss_weight: 1.5
+  mir_loss_weight: 2.5

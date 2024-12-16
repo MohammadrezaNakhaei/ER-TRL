@@ -1,0 +1,27 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled  
+
+latent_size: 20
+net_size: 256
+encoder_dims: [200, 200, 200]
+use_gpu: true
+gpu_id: 0
+use_wandb: true
+seed: 0
+
+env_params:
+  n_tasks: 40
+  max_episode_steps: 200
+
+path_to_weights: null
+
+util_params:
+  base_log_dir: ./output
+  debug: false
+  
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .

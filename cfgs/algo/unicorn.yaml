@@ -1,0 +1,11 @@
+# @package _global_
+algo_params:
+  allow_backward_z: false
+  use_FOCAL_cl: true
+  use_club: false
+  use_prediction: true
+
+util_params:
+  exp_name: 'UNICORN'
+
+algo_type: "CSROPrediction"

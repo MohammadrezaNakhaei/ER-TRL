@@ -1,0 +1,12 @@
+# @package _global_
+algo_params:
+  allow_backward_z: false
+  use_FOCAL_cl: true 
+  use_club: false
+  generator_dim: 20
+  n_update_gan: 5
+
+util_params:
+  exp_name: 'ER-TRL'
+
+algo_type: "ERTRL"

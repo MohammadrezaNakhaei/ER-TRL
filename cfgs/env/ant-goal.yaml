@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+  - common
+  - _self_
+
+env_name: 'ant-goal-custom'
+algo_params:
+  meta_batch_size: 10
+  num_steps_per_eval: 800
+  embedding_batch_size: 512
+  embedding_mini_batch_size: 512
+  data_dir: './offline_dataset/ant-goal-custom'
+  club_model_loss_weight: 10.0
+  club_loss_weight: 50.0
+  prediction_loss_weight: 1.5
+  mir_loss_weight: 5.0
